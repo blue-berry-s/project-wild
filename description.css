@@ -1,0 +1,23 @@
+#description{
+    text-align: center;
+    position:relative;
+    margin-bottom:0;
+    width:100%;
+    height:39.8em;
+    /*background: linear-gradient(270deg, #A56E62 -65.98%, #B7825A 61.28%, #B17257 99.59%);*/
+}
+#desc_box{
+    left:35%;
+    position:absolute;
+    width:30em;
+    text-align:left;
+}
+
+#desc_text{
+    left:5%;
+    top:20%;
+    position:absolute;
+}
+#desc_content{
+    position:absolute;
+}

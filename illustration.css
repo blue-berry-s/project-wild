@@ -1,0 +1,11 @@
+.illustration{
+    width:100%;
+    height:auto;
+    margin:0 0 0 0;
+}
+
+#ill2{
+    object-fit:cover;
+    max-height:43em;
+    object-position:top;
+}
