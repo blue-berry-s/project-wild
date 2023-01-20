@@ -22,7 +22,15 @@
 #predvprey{
     position:relative;
     width:100%;
-    height:28em;
+    height:35em;
+}
+
+.crop{
+    position:absolute;
+    max-height:120%;
+    left:-4%;
+    top:-7em;
+    z-index:2;
 }
 
 #bg_text{
@@ -30,17 +38,33 @@
     color:white;
     font-size:8em;
     position:absolute;
-    top:0.5em;
-    left:19%;
+    top:1.5em;
+    left:17%;
     z-index:1;
     font-family:'blacklistedregular';
     letter-spacing: 0.045em;
 }
-.crop{
+
+#bgcontain{
+    letter-spacing: 0.045em;
+    display:flex;
+
+}
+#blue,#red{
+    top:1.5em;
+    font-family:'blacklistedregular';
+    z-index:1;
+    font-size:8em;
     position:absolute;
-    max-height:143%;
-    top:-12em;
-    z-index:2;
+    
+}
+#blue{
+    color:blue;
+    left:38%;
+}
+#red{
+    color:red;
+    left:58%;
 }
 
 #mechanic_desc{
@@ -90,3 +114,8 @@
     object-fit: cover;
 }
 
+#platform_desc{
+    position:relative;
+    padding:1em;
+    background-color:rgba(255, 255, 255, 0.80);
+}

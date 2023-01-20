@@ -1,6 +1,14 @@
 a{
+    font-family:'blacklistedregular';
     padding:0;
     margin:0;
+    text-decoration: none;
+    color:white;
+    transition-duration:0.5s;
+    transition-property:color;
+}
+a:hover{
+    color:greenyellow;
 }
 header{
     z-index: 10;
@@ -9,7 +17,7 @@ header{
     width:100%;
     position:fixed;
     color:white;
-    background-color:#0d0b0a;
+    background-color:#12171a;
     padding: 2em;
     display:flex;
     justify-content:space-around;

@@ -31,7 +31,7 @@ class Title{
             if(this.frame % 3 === 0 && this.spans[this.idx].innerText !== ' '){
                 this.spans[this.idx].innerText = specialChars[Math.floor(Math.random() * specialChars.length)]
             }
-            if(this.frame % 10 == 0 && this.frame !== 0){ // Tweak the frame % number to adjust animation time
+            if(this.frame %  5 == 0 && this.frame !== 0){ // Tweak the frame % number to adjust animation time
                 this.spans[this.idx].innerText = this.originalString[this.idx]
                 this.idx++
             }

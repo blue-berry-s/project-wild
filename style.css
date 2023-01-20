@@ -19,9 +19,15 @@
 
 }
 
+.title{
+    font-family:'blacklistedregular';
+    letter-spacing: 0.045em;
+}
+
 p{
-    font-family:'Oswald', sans-serif;
-    font-size:1.25em;
+    /*font-family:'Oswald', sans-serif;*/
+    font-family: 'Oxygen', sans-serif;
+    font-size:1.2em;
 }
 .atop{
     position:relative;
@@ -32,7 +38,8 @@ html{
 }
 body{
     overflow-x:hidden;
-    background-color:#4C573E;
+    /*background-color:#4C573E;*/
+    background-color:black;
     margin: 0;
     padding: 0 0 0 0;
 
@@ -68,6 +75,7 @@ span{
 }
 
 #hook{
+    color:white;
     width:100%;
     height:20em;
     text-align:center;
@@ -100,7 +108,7 @@ span{
 
 #hook{
     /*background: radial-gradient(94.94% 52.73% at 50% 50%, #080907 0%, rgba(0, 0, 0, 0) 100%);*/
-    background: linear-gradient(180deg, rgba(87, 80, 62, 0.244) 12.19%, #001F72 100%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #001F73 100%);
     position:relative;
     height:35em;
     padding-bottom:9em;
@@ -115,7 +123,7 @@ span{
 }
 
 #brown{
-    opacity:75%;
+    opacity:50%;
     z-index:1;
     position:absolute;
     left:43%;
@@ -123,4 +131,81 @@ span{
     width:20em;
 }
 
+#question{
+    color:white;
+}
+#Play{
+    position:relative;
+    padding-top: 2em;
+    height:20em;
+}
+button{
+    cursor:pointer;
+    position:absolute;
+    left:43%;
+    padding: 0.5em 1em 0.5em 1em;
+    background-color:white;
+    font-family:'Oswald', sans-serif;
+    font-size:2em;
+    transition-duration:0.5s;
+    transition-property:all;
+
+}
+button:hover{
+    background-color:greenyellow;
+    color:white;
+}
+button:active{
+    background-color:rgba(172, 255, 47, 0.532);
+}
+
+#topo_3{
+    position:absolute;
+    overflow:hidden;
+    height:22em;
+    top:0;
+    z-index:-1;
+    
+}
+
+#end_logo{
+    margin-left:15em;
+    width:30%;
+}
+#end{
+    position:relative;
+    top:25%;
+    max-width:100%;
+   
+}
+#contact{
+    padding:4em;
+}
+#container{
+    display:flex;
+}
+
+#contact_text{
+    margin-left:15em;
+    color:white;
+}
+
+#contact_text h2{
+    margin-top:0.5em;
+    margin-bottom:0.5em;
+    text-align: left;
+    font-size:2em;
+}
+
+#contact_text p{
+    font-size:1em;
+}
+
+#youtube{
+    display:inline;
+}
+
+#contact_text a{
+    padding-right:1em;
+}
 

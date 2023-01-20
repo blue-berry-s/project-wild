@@ -7,15 +7,19 @@
     /*background: linear-gradient(270deg, #A56E62 -65.98%, #B7825A 61.28%, #B17257 99.59%);*/
 }
 #desc_box{
-    left:35%;
-    position:absolute;
-    width:30em;
+    left:5%;
+    top:-1.5em;
+    position:relative;
+    width:32em;
     text-align:left;
 }
 
 #desc_text{
+    padding:1em;
+    width:35em;
+    background-color:rgba(255, 255, 255, 0.80);
     left:5%;
-    top:20%;
+    top:15%;
     position:absolute;
 }
 #desc_content{

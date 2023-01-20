@@ -1,11 +1,13 @@
 #title{
+    position:relative;
+    top:0.5em;
     z-index:5;
     font-size:5em;
     color:white;
 }
 #character{
     position:relative;
-    height: 70em;
+    height: 65em;
     /*background: linear-gradient(180deg, #C34F3B -8.72%, #9AACB8 45.42%, #6A6F70 199.14%);*/
     /*background: linear-gradient(180deg, #C34F3B 0%, #9AACB8 99.5%);*/
     /*background-color:#020111 ;*/
@@ -36,6 +38,8 @@
     object-position: -10em;
     max-height:150%;
     margin:auto;
+    transition-duration:0.5s;
+    transition-property:'opacity';
 }
 #tiger{
     max-height:170%;
@@ -47,7 +51,7 @@
 }
 
 #dog{
-    object-position: -10.5em;
+    object-position: -8em;
 }
 
 #antelope{
@@ -84,3 +88,37 @@
     left: 33%;
     position:absolute;
 }
+#character_text{
+    position:relative;
+    left:20%;
+    max-width:60%
+}
+
+.profile:hover .full{
+    opacity:50%;
+}
+.profile:hover{
+    background-color: black;
+}
+
+.profile:hover .char_name{
+    opacity:100%;
+}
+
+.char_name{
+    margin:0;
+    padding:0;
+    width:7.9em;
+    font-size:2em;
+    position:absolute;
+    font-family:'blacklistedregular';
+    letter-spacing: 0.045em;
+    color:rgb(255, 255, 255);
+    top:30%;
+    opacity:0%;
+    transition-duration:0.5s;
+    transition-property:'opacity';
+
+}
+
+
