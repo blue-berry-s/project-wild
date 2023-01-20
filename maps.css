@@ -1,0 +1,18 @@
+#maps{
+    display:flex;
+    position:relative;
+}
+#map_desc{
+    text-align:center;
+    width: 30em;
+    position:absolute;
+    left:60em;
+    top:5em;
+    padding:1em;
+    background-color:rgba(255, 255, 255, 0.80);
+}
+
+#map_anc{
+    top:-5em;
+}
+

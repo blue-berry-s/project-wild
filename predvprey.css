@@ -3,7 +3,6 @@
 }
 
 #mechanic_text{
-    background-color: blueviolet;
     width: 40%;
     position:relative;
 }
@@ -13,7 +12,7 @@
     left: 1em;
     top: -3em;
 }
-#map{
+#boxing{
     top:-30em;
     height:100%;
     background-color: #020111;
@@ -67,55 +66,3 @@
     left:58%;
 }
 
-#mechanic_desc{
-    /*background-color:red;*/
-    display:flex;
-    text-align:right;
-    padding-bottom:10em;
-}
-
-.style{
-    background-color: #00011B;
-    display:flex;
-    height:25em;
-}
-#style_text{
-    padding-left:10%;
-    width:30%;
-    background-color: #00011B;
-}
-
-#resemblence{
-    text-align:center;
-}
-
-#screenshot{
-    width:40em;
-    height:25em;
-    background-color: blue;
-    position:absolute;
-    left:36%;
-}
-
-
-#landscape{
-    max-height:100%;
-}
-
-#res_img{
-    position:relative;
-    left:12%;
-    justify-content:space-around;
-}
-.other{
-    padding: 0 5em 0 2.5em;
-    width:10em;
-    height:15em;
-    object-fit: cover;
-}
-
-#platform_desc{
-    position:relative;
-    padding:1em;
-    background-color:rgba(255, 255, 255, 0.80);
-}

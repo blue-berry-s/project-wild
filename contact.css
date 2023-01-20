@@ -1,0 +1,30 @@
+#contact{
+    padding:4em;
+}
+#container{
+    display:flex;
+}
+
+#contact_text{
+    margin-left:15em;
+    color:white;
+}
+
+#contact_text h2{
+    margin-top:0.5em;
+    margin-bottom:0.5em;
+    text-align: left;
+    font-size:2em;
+}
+
+#contact_text p{
+    font-size:1em;
+}
+
+#youtube{
+    display:inline;
+}
+
+#contact_text a{
+    padding-right:1em;
+}

@@ -30,3 +30,16 @@ header{
     left:50%;
 }
 
+#hiddenlogo{
+    position:absolute;
+    width:2em;
+    top:1em;
+    left:50%;
+    opacity:0;
+    transition-duration:0.5s;
+    transition-property:'opacity';
+}
+
+#hiddenlogo:hover{
+    opacity:100;
+}

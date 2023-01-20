@@ -1,3 +1,16 @@
+<!-- 
+    Summary: Game pitch website for fictional 5v5 multiplayer shooter
+
+    Contains: Landing, Description block, Character block, Maps block and Contact
+
+    Analysis: 
+            - Due to lack of familiarity with the full extend of HTML tags there are several overuse/misuse of <div> tags
+            - Lack of familiarity of CSS excessive use of id
+            - overuse of "position:absolute" when "position:relative" would have sufficed        
+
+
+-->
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -7,11 +20,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="header.css">
+        <link rel="stylesheet" href="landing.css">
         <link rel="stylesheet" href="character.css">
         <link rel="stylesheet" href="illustration.css">
-        <link rel="stylesheet" href="design.css">
+        <link rel="stylesheet" href="predvprey.css">
         <link rel="stylesheet" href="description.css">
-        <link rel="stylesheet" href="market.css">
+        <link rel="stylesheet" href="maps.css">
+        <link rel ="stylesheet" href="contact.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
@@ -27,15 +42,17 @@
     <body>
         
         <header>
-            <a href="#description"> Description </a>
-            <a href="#character"> Characters </a>
-            <a href="#name"> <img id = "logo" src="images/logo/logo.png" alt= "Logo"> </a>
-            <a href="#design"> Maps </a> 
-            <a href="#market"> Contact </a>
+            <a href="#des_anc"> Description </a>
+            <a href="#char_anc"> Characters </a>
+            <a href="#top_anc"> <img id = "logo" src="images/logo/logo.png" alt= "Logo"> </a>
+            <a href="#top_anc"> <img id = "hiddenlogo" src="images/logo/green_logo.png" alt= "Green Logo"></a>
+            <a href="#map_anc"> Maps </a> 
+            <a href="#contact"> Contact </a>
         </header>
 
         <div id = "landing">
-            <section><h1 id="name"> Project: WILD </section>
+            <div class = anchor id = "top_anc"> </div>
+            <section><h1 id="name"> Project:WILD </section>
             <div id = "contain"><img id = "topo" src="images/illustration/topographic.png" alt="topographic map"></div>
         </div>
 
@@ -45,19 +62,19 @@
             <div id = "quote">
                 <h2> the latest 5v5 tactical shooter</h2>
             </div>
-            <img id = "brown" src="images/logo/logo.png" alt= "Logo"> 
+            <img id = "faded" src="images/logo/logo.png" alt= "Faded Logo"> 
         </div>
 
        
 
         <div id = "description">
+            <div class = "anchor" id="des_anc"></div>
             <div id = "desc_content">
-                <img src="images/illustration/illustration1.png" class = "illustration" id="ill1">
+                <img src="images/illustration/illustration1.png" class = "illustration" id="ill1" alt="2 bird headed Recruits overlooking a town">
             <div id = "desc_text">
                 <h2 class = "title"> The hunt begins with WILD </h2>
                 <div id = "desc_box"> 
                     <p>Project:WILD takes the fight of the food chain to a new level. Play as either a predator or prey within an ever changing battlefield. Surviving the frontlines will require quick thinking, smart movement and sharp gunplay. Explore project:WILD’s vast array of Recruits, weapons and skills to find the playstyle that will help you defeat your foes.</p>
-                    
                 </div>
             </div>
             </div>
@@ -65,43 +82,44 @@
             
         </div>
         <div id = "predvprey">
-            <div id = "map">
-                <img class="crop" src="Images/illustration/teams_test.png"alt = "Predator vs Prey illustration/ Crest">
+            <div id = "boxing">
+                <img class="crop" src="Images/illustration/teams_test.png"alt = "A cow Recruit boxing with a lioness Recruit">
             </div>
            
             <div id = "bgcontain"><h2  id = "blue"> 5 </h2> <h2 id = "bg_text"> VS </h2> <h2 id = "red"> 5 </h2></div>
         </div>
-        <div id = "illu">
-            <img src="images/illustration/illustration2.png" class = "illustration" id="ill2">
+        <div>
+            <img src="images/illustration/illustration2.png" class = "illustration" id="ill2" alt="A fox, hyena and jackal Recruit standing in smoke">
         </div>
         
 
         <div id = "character">
+            <div class = "anchor" id = "char_anc"></div>
             <div id = "character_content">
-                <div class = "atop"><h2 class = "title" id = "title"> Your recruits, your ways </h2> </div>
+                <div class = "atop"><h2 class = "title" id = "title"> Your <a>recruits</a>, your <a>ways</a> </h2> </div>
             <div class = "character_box"> 
                 <div class = "profile">
-                    <img class = "full" src="images/characters/panda.png" alt="Panda Character">
+                    <img class = "full" src="images/characters/panda.png" alt="Panda Recruit">
                     <h2 class = "char_name"> Ailuropoda melanoleuca </h2>
                 </div>
                 <div class = "profile">
-                    <img class = "full" id = "tiger"src="images/characters/tiger.png" alt="Tiger Character">
+                    <img class = "full" id = "tiger"src="images/characters/tiger.png" alt="Tiger Recruit">
                     <h2 class = "char_name"> Panthera tigris </h2>
                 </div>
                 <div class = "profile">
-                    <img class = "full" id = "puffin" src="images/characters/puffin.png" alt="Puffin Character">
+                    <img class = "full" id = "puffin" src="images/characters/puffin.png" alt="Puffin Recruit">
                     <h2 class = "char_name"> Fratercula </h2>
                 </div>
                 <div class = "profile">
-                    <img class = "full" id = "dog" src="images/characters/dog.png" alt="Dog Character">
+                    <img class = "full" id = "dog" src="images/characters/dog.png" alt="Dog Recruit">
                     <h2 class = "char_name"> Canis lupus familiaris </h2>
                 </div>
                 <div class = "profile">
-                    <img class = "full" id = "antelope" src="images/characters/antelope.png" alt="Antelope Character">
+                    <img class = "full" id = "antelope" src="images/characters/antelope.png" alt="Antelope Recruit">
                     <h2 class = "char_name"> Bovidae </h2>
                 </div>
                 <div class = "profile">
-                    <img class = "full" id = "vulture" src="images/characters/vulture.png" alt="Vulture Character">
+                    <img class = "full" id = "vulture" src="images/characters/vulture.png" alt="Vulture Recruit">
                     <h2 class = "char_name"> Gypaetus barbatus </h2>
                 </div>
             </div>
@@ -116,9 +134,10 @@
 
         
         
-        <div id = "market">
+        <div id = "maps">
+            <div class = "anchor" id = "map_anc"></div>
             <img src="images/illustration/illustration3.png" class = "illustration" id="ill3">
-                <div id = "platform_desc">
+                <div id = "map_desc">
                     <h2 class = "title"> The WILD is calling </h2>
                     <p> Explore cinematic maps that evolve as the game progresses. Balance between tactical skill usage and fierce gun-play to adapt to the ever-changing map design. Test your abilities in a sprawling rain forest or a scorching desert where the weather could be your friend or foe. </p>
 

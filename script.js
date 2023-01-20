@@ -1,3 +1,6 @@
+//Arthor: Conor Bailey (Youtube vid: JavaScript Random Text Reveal Effect)
+//Modified by Berry
+
 let h1Elements = [];
 const h1Array = [...document.querySelectorAll('h1')];
 const specialChars = [...'!@£$%&}{":;?><][+=-_qwertyuiopasdfghjklzxcvbnm'.split('')]
@@ -28,6 +31,9 @@ class Title{
         if(this.idx !== this.originalString.length && this.intersecting){
             this.spans[this.idx].style.opacity = 1;
             this.spans[this.idx].style.transform = `translateX(0)`
+            if(this.idx >6){ // This if check is specifically for project:WILD to change the colour of the text after the 6th letter
+                this.spans[this.idx].style.color = "greenyellow"
+                }
             if(this.frame % 3 === 0 && this.spans[this.idx].innerText !== ' '){
                 this.spans[this.idx].innerText = specialChars[Math.floor(Math.random() * specialChars.length)]
             }
